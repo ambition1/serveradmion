@@ -19,5 +19,8 @@ public class AdminserverApplication extends SpringBootServletInitializer {
         return application.sources(AdminserverApplication.class);
     }
 
+
+
+
 }
 
