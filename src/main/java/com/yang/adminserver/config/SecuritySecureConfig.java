@@ -13,6 +13,7 @@ import org.springframework.security.web.authentication.SavedRequestAwareAuthenti
  * @Description:
  * @Date: Created in 16:57 2019/1/14
  */
+/*
 @Configuration
 public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
 
@@ -41,3 +42,4 @@ public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
     }
 
 }
+*/
