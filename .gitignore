@@ -1,7 +1,8 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
-
-
+Dockerfile
+.mvn
+logs
 ### STS ###
 .apt_generated
 .classpath

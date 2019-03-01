@@ -56,6 +56,7 @@ public class AdminserverApplication extends SpringBootServletInitializer {
             SavedRequestAwareAuthenticationSuccessHandler successHandler = new SavedRequestAwareAuthenticationSuccessHandler();
             successHandler.setTargetUrlParameter("redirectTo");
 
+
             http.authorizeRequests()
                     .antMatchers(adminContextPath + "/assets/**").permitAll()
                     .antMatchers(adminContextPath + "/login").permitAll()
@@ -64,7 +65,8 @@ public class AdminserverApplication extends SpringBootServletInitializer {
                     .formLogin().loginPage(adminContextPath + "/login").successHandler(successHandler).and()
                     .logout().logoutUrl(adminContextPath + "/logout").and()
                     .httpBasic().and()
-                    .csrf().disable();
+                    .csrf().disable()
+                    .headers().frameOptions().disable();
         }
     }
 }
